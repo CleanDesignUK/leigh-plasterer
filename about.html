@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>About Us - Leigh Plasterers | Expert Plastering Services</title>
+  <meta name="description" content="Learn about Leigh Plasterers: your local plasterer near Leigh, Atherton, and Bolton. Trained under WG Plastering, we offer skimming, dry lining, and water damage repair with a dedication to quality." />
+  <meta name="keywords" content="Leigh Plasterers, plasterers near me, plasterers in Atherton, water damage repair, skimming and re-skimming, local plasterers, professional plastering services">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.leighplasterers.uk/about.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Us - Leigh Plasterers | Expert Plastering Services" />
+  <meta property="og:description" content="Discover the story behind Leigh Plasterers and learn how we serve Leigh, Tyldesley, Atherton, Bolton, and beyond with unmatched plastering craftsmanship." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.leighplasterers.uk/about.html" />
+  <meta property="og:image" content="images/leigh-plasterers-logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leigh Plasterers | Our Story & Services">
+  <meta name="twitter:description" content="Learn about Leigh Plasterers: top-rated plasterers near Leigh, Atherton, Bolton. Trained under WG Plastering with a focus on quality and local expertise.">
+  <meta name="twitter:image" content="images/leigh-plasterers-logo.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+    integrity="sha512-dO4GmTVPHk6j6V1YqRC2wzWm8XeQONiF5hGNYoAfGJBlxF4jB/KF1n1g8he+eTY9pjaMowGkZa5iG8gjH2T9hw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Bootstrap CSS (Bootstrap 5.0.2) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  >
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      color: #2c3e50;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #0A1A32;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+    }
+    .nav-link:hover {
+      color: #e0e0e0 !important;
+    }
+    .call-button {
+      white-space: nowrap;
+      background-color: #1c5e8c;
+      color: #ffffff !important;
+      border-radius: 30px;
+      padding: 8px 20px;
+      box-shadow: 0 4px 10px rgba(28, 94, 140, 0.5);
+      transition: all 0.3s ease;
+    }
+    .call-button:hover {
+      background-color: #14527a;
+      box-shadow: 0 6px 16px rgba(20, 82, 122, 0.7);
+    }
+    .about-header {
+      background: url("images/about-us-banner.jpg") center center no-repeat;
+      background-size: cover;
+      min-height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+    }
+    .about-header-overlay {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .about-header h1 {
+      color: #fff;
+      z-index: 1;
+      font-size: 3rem;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+    }
+    .about-content {
+      padding: 60px 20px;
+    }
+    .about-content h2 {
+      color: #0A1A32;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .about-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    .areas-served-section {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .areas-served-section h3 {
+      color: #0A1A32;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .why-choose-section {
+      background-color: #ecf0f1;
+      padding: 60px 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .why-choose-section h2 {
+      color: #0A1A32;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    .why-choose-card {
+      border: none;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    .why-choose-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .testimonials-section {
+      margin-top: 40px;
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .testimonials-section h2 {
+      color: #0A1A32;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    .testimonial-card {
+      border: none;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .testimonial-text {
+      font-style: italic;
+      color: #2c3e50;
+    }
+    .testimonial-author {
+      font-weight: 700;
+      color: #0A1A32;
+      margin-top: 10px;
+    }
+    .team-section {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .team-section h3 {
+      color: #0A1A32;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .team-member {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .team-member img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      max-width: 150px;
+      margin-bottom: 15px;
+    }
+    .team-member h4 {
+      color: #0A1A32;
+      margin-bottom: 5px;
+    }
+    .team-member p {
+      color: #2c3e50;
+      font-size: 0.95rem;
+    }
+    footer {
+      background-color: #0A1A32;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 60px;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .about-header h1 {
+        font-size: 2.5rem;
+      }
+      .services-overview-title,
+      .reviews-title,
+      .leave-review-title,
+      .why-choose-section h2,
+      .testimonials-section h2,
+      .team-section h3 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">
+      Leigh Plasterers
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="ms-lg-3">
+        <a
+          class="btn call-button"
+          href="tel:+447915578568"
+        >
+          <i class="fas fa-phone-alt me-2"></i> Call: 07915 578568
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HEADER -->
+<div class="about-header position-relative">
+  <div class="about-header-overlay"></div>
+  <h1>About Leigh Plasterers</h1>
+</div>
+<!-- /HEADER -->
+
+<!-- MAIN CONTENT -->
+<div class="container about-content">
+  <h2>Our Story</h2>
+  <p>
+    Leigh Plasterers was founded by a dedicated professional trained under
+    WG Plastering—one of the most respected names in the region. With
+    expertise in <strong>skimming and re-skimming</strong>, <strong>dry lining</strong>, 
+    <strong>rendering</strong>, and <strong>water damage repair</strong>,
+    we serve homeowners and businesses throughout <strong>Leigh</strong>,
+    <strong>Atherton</strong>, <strong>Bolton</strong>, and beyond.
+  </p>
+  <p>
+    Our mission is to deliver smooth, long-lasting finishes at fair prices.
+    Whether it’s a small room or a large commercial project, we approach each
+    job with care and precision—ensuring you get the best plastering results.
+  </p>
+
+  <!-- TEAM SECTION -->
+  <section class="team-section">
+    <h3>Meet Our Team</h3>
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-md-4">
+        <div class="team-member">
+          <img src="images/team-member-1.jpg" alt="John Doe - Lead Plasterer">
+          <h4>John Doe</h4>
+          <p>Lead Plasterer</p>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-md-4">
+        <div class="team-member">
+          <img src="images/team-member-2.jpg" alt="Jane Smith - Project Manager">
+          <h4>Jane Smith</h4>
+          <p>Project Manager</p>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-md-4">
+        <div class="team-member">
+          <img src="images/team-member-3.jpg" alt="Mike Johnson - Apprentice">
+          <h4>Mike Johnson</h4>
+          <p>Apprentice</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /TEAM SECTION -->
+
+  <!-- AREAS WE SERVE -->
+  <div class="areas-served-section">
+    <h3>Areas We Serve</h3>
+    <p>
+      We proudly operate across the Greater Manchester region, including:
+      <em>Leigh (113k), Tyldesley (27k), Atherton (29k), Bolton (414k), Farnworth (58k), Bury (146k), Salford (368k), Worsley (117k)</em>, 
+      and more. If you’re searching for “plasterers near me,” you’ve come to the right place!
+    </p>
+  </div>
+  <!-- /AREAS WE SERVE -->
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose-section text-center mt-5">
+    <h2>Why Choose Leigh Plasterers?</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="why-choose-card">
+          <i class="fas fa-check-circle fa-2x text-primary mb-3"></i>
+          <h5 class="mb-3">Quality Workmanship</h5>
+          <p>
+            We use premium materials and proven techniques to ensure a flawless
+            finish, every time—no cracks, no mess, just perfection.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="why-choose-card">
+          <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+          <h5 class="mb-3">Local Expertise</h5>
+          <p>
+            Being locally based, we understand the specific plastering needs of
+            Leigh, Atherton, Bolton, and other surrounding areas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /WHY CHOOSE US -->
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <h2>Customer Feedback</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Leigh Plasterers transformed our old ceilings. Excellent communication and
+            top-notch quality. Highly recommended!”
+          </p>
+          <p class="testimonial-author">- Sarah, Tyldesley</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “They handled water damage repairs after a serious leak. Their
+            professionalism saved us time and money. Will definitely use again.”
+          </p>
+          <p class="testimonial-author">- Mark, Leigh</p>
+        </div>
+      </div>
+      <!-- Add more testimonials as needed -->
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Exceptional service from start to finish. The team was punctual and meticulous.”
+          </p>
+          <p class="testimonial-author">- Linda, Bolton</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            “Our new office space looks amazing thanks to Leigh Plasterers. Highly skilled!”
+          </p>
+          <p class="testimonial-author">- Tom, Atherton</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /TESTIMONIALS -->
+
+</div>
+<!-- /MAIN CONTENT -->
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p class="mb-0">&copy; 2025 Leigh Plasterers. Serving Leigh, Atherton, Bolton & More.</p>
+  <p class="mb-0">
+    <a href="privacy.html" class="text-white">Privacy Policy</a> | 
+    <a href="terms.html" class="text-white">Terms of Service</a>
+  </p>
+</footer>
+<!-- /FOOTER -->
+
+<!-- Bootstrap JS (Bootstrap 5.0.2) -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFY3bybNT2+Qm7gFQnZ7UWf5rKboMnuYF0sg6N9C/Qvn3dz3vj0E2ssqMf"
+  crossorigin="anonymous">
+</script>
+</body>
+</html>

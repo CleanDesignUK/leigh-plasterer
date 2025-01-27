@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Primary Meta Tags -->
+  <title>Home - Leigh Plasterers | Professional Plastering Services in Leigh</title>
+  <meta name="description" content="Leigh Plasterers provides professional plastering, skimming, and rendering services in Leigh, Tyldesley, Atherton, and Bolton. Specializing in water damage repair, we guarantee a smooth finish every time. Contact us for a free quote!">
+  <meta name="keywords" content="plasterers near me, local plasterer near me, plasterers in Atherton, water damage repair, skimming and re-skimming, professional plastering, cost of re skimming a room, plasterers Bolton, plastering cost, dry lining">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.leighplasterers.uk/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Home - Leigh Plasterers | Expert Plastering Services in Leigh"/>
+  <meta property="og:description" content="Leigh Plasterers offers high-quality skimming, rendering, and dry lining at competitive prices. Specializing in water damage repairs. Get a free quote today!"/>
+  <meta property="og:url" content="https://www.leighplasterers.uk/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/leigh-plasterers-logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Leigh Plasterers | Quality Plastering in Leigh & Atherton">
+  <meta name="twitter:description" content="Professional plastering services in Leigh, Tyldesley, Atherton, Bolton. Reliable water damage repair, skimming, and rendering. Contact us for a free quote!">
+  <meta name="twitter:image" content="images/leigh-plasterers-logo.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    rel="stylesheet"
+    integrity="sha512-dO4GmTVPHk6j6V1YqRC2wzWm8XeQONiF5hGNYoAfGJBlxF4jB/KF1n1g8he+eTY9pjaMowGkZa5iG8gjH2T9hw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Bootstrap CSS (Bootstrap 5.0.2) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  >
+
+  <!-- Custom Styles -->
+  <style>
+    /* Reset and Base Styles */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding-top: 70px; /* Height of the fixed navbar */
+      color: #2c3e50;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+      background-color: #0A1A32;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand, .nav-link, .navbar-toggler {
+      color: #ffffff !important;
+    }
+    .nav-link:hover {
+      color: #e0e0e0 !important;
+    }
+    .call-button {
+      white-space: nowrap;
+      background-color: #1c5e8c;
+      color: #ffffff !important;
+      border-radius: 30px;
+      padding: 8px 20px;
+      box-shadow: 0 4px 10px rgba(28, 94, 140, 0.5);
+      transition: all 0.3s ease;
+    }
+    .call-button:hover {
+      background-color: #14527a;
+      box-shadow: 0 6px 16px rgba(20, 82, 122, 0.7);
+    }
+
+    /* Hero Section */
+    .hero-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      color: #ffffff;
+      background: #0A1A32;
+      padding: 100px 20px;
+    }
+    .hero-image {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: cover;
+      opacity: 0.8;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    .hero-content p {
+      font-size: 1.25rem;
+      color: #ffffff;
+      margin-top: 1rem;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 26, 50, 0.6);
+      z-index: 1;
+    }
+
+    /* Services Overview */
+    .services-overview-section {
+      padding: 60px 0;
+      background-color: #f9f9f9;
+    }
+    .services-overview-title {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      color: #0A1A32;
+      text-align: center;
+    }
+    .service-card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background-color: #ffffff;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .service-image {
+      height: 220px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .service-title {
+      color: #0A1A32;
+      font-size: 1.5rem;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+    .service-description {
+      color: #2c3e50;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    .service-cta-button {
+      background-color: #0A1A32;
+      color: #fff;
+      border-radius: 30px;
+      margin-top: 15px;
+      transition: all 0.3s ease;
+    }
+    .service-cta-button:hover {
+      background-color: #14527a;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(120deg, #0A1A32, #1c5e8c);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .cta-title {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      background-color: #ffffff;
+      color: #0A1A32;
+      border-radius: 30px;
+      padding: 12px 30px;
+      box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+      transition: all 0.3s ease;
+      font-weight: 600;
+    }
+    .cta-button:hover {
+      background-color: #f2f2f2;
+      color: #1c5e8c;
+    }
+
+    /* Leave Review Section */
+    .leave-review-section {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .leave-review-title {
+      font-size: 2rem;
+      color: #0A1A32;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .leave-review-description {
+      color: #2c3e50;
+      max-width: 700px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+    }
+    .review-buttons .btn {
+      margin: 0 10px 10px 0;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    /* Reviews Section */
+    .reviews-section {
+      padding: 60px 20px;
+      background-color: #ecf0f1;
+    }
+    .reviews-title {
+      font-size: 2rem;
+      color: #0A1A32;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .review-card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+      background-color: #fff;
+      padding: 20px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .review-card:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .review-text {
+      font-style: italic;
+      color: #2c3e50;
+      margin-top: 20px;
+      flex-grow: 1;
+    }
+    .review-rating {
+      color: #f1c40f;
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+    .review-author {
+      color: #0A1A32;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+    .btn-more-reviews {
+      margin-top: 20px;
+      border-radius: 30px;
+      background-color: #0A1A32;
+      color: #fff;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .btn-more-reviews:hover {
+      background-color: #14527a;
+    }
+    .more-reviews-container.d-none {
+      display: none;
+    }
+
+    /* Additional Services Section */
+    .services-section {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .services-title {
+      font-size: 2rem;
+      color: #0A1A32;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .services-description {
+      color: #2c3e50;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+    }
+    .services-cta-button {
+      background-color: #0A1A32;
+      color: #fff;
+      border-radius: 30px;
+      padding: 12px 30px;
+      transition: background-color 0.3s ease;
+      font-weight: 600;
+    }
+    .services-cta-button:hover {
+      background-color: #14527a;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0A1A32;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      .services-overview-title,
+      .reviews-title,
+      .leave-review-title {
+        font-size: 2rem;
+      }
+      .cta-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">
+      Leigh Plasterers
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="ms-lg-3">
+        <a
+          class="btn call-button"
+          href="tel:+447915578568"
+        >
+          <i class="fas fa-phone-alt me-2"></i> Call: 07915 578568
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+  <img
+    src="images/plastering-hero-1.jpg"
+    alt="Leigh Plasterers - Professional plastering services in Leigh"
+    class="hero-image"
+  >
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Leigh Plasterers</h1>
+    <p class="fs-4">Expert Plastering Services in Leigh, Atherton & Bolton</p>
+    <a href="contact.html" class="btn btn-outline-light btn-lg mt-3" title="Get a Free Quote for Your Plastering Project">
+      Get a Free Quote <i class="fas fa-arrow-right ms-2"></i>
+    </a>
+  </div>
+</section>
+<!-- /HERO SECTION -->
+
+<!-- SERVICES OVERVIEW -->
+<section class="services-overview-section">
+  <div class="container">
+    <h2 class="services-overview-title">Our Plastering Services</h2>
+    <div class="row g-5">
+      <div class="col-md-4">
+        <div class="card service-card">
+          <img
+            src="images/plastering-skimming.jpg"
+            class="card-img-top service-image"
+            alt="Professional Plastering & Skimming in Leigh"
+          >
+          <div class="card-body text-center">
+            <h3 class="service-title">Plastering & Skimming</h3>
+            <p class="service-description">
+              Smooth finishes for walls and ceilings, perfect for both residential and commercial properties.
+            </p>
+            <a
+              href="services.html#plastering-skimming"
+              class="btn service-cta-button"
+              title="Learn More About Plastering & Skimming"
+            >
+              Learn More <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card service-card">
+          <img
+            src="images/dry-lining.jpg"
+            class="card-img-top service-image"
+            alt="Dry Lining Service"
+          >
+          <div class="card-body text-center">
+            <h3 class="service-title">Dry Lining</h3>
+            <p class="service-description">
+              Modern solutions for insulation and quicker finishing times. Ideal for new builds and renovations.
+            </p>
+            <a
+              href="services.html#dry-lining"
+              class="btn service-cta-button"
+              title="Dry Lining Services"
+            >
+              Learn More <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card service-card">
+          <img
+            src="images/rendering.jpg"
+            class="card-img-top service-image"
+            alt="Rendering Services for Interior Walls"
+          >
+          <div class="card-body text-center">
+            <h3 class="service-title">Rendering</h3>
+            <p class="service-description">
+              Enhance and protect interior or exterior walls with quality rendering that stands the test of time.
+            </p>
+            <a
+              href="services.html#rendering"
+              class="btn service-cta-button"
+              title="Rendering Services"
+            >
+              Learn More <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /SERVICES OVERVIEW -->
+
+<!-- CTA SECTION -->
+<section class="cta-section">
+  <h3 class="cta-title">Get a Free Quote Today</h3>
+  <a
+    href="contact.html"
+    class="btn cta-button btn-lg"
+    title="Contact Leigh Plasterers for a Free Quote"
+  >
+    Contact Us <i class="fas fa-arrow-right ms-2"></i>
+  </a>
+</section>
+<!-- /CTA SECTION -->
+
+<!-- LEAVE REVIEW SECTION -->
+<section class="leave-review-section">
+  <h4 class="leave-review-title">Want to Leave a Review?</h4>
+  <p class="leave-review-description">
+    We value customer feedback. Share your experience on
+    <a
+      href="https://www.facebook.com/leigh.plasterers1"
+      target="_blank"
+      class="text-danger"
+      rel="noopener"
+    >
+      Facebook
+    </a> or on our 
+    <a
+      href="https://g.page/r/CZ4_MkvD-iiIEBM/review"
+      target="_blank"
+      class="text-danger"
+      rel="noopener"
+    >
+      Google Business Profile
+    </a>.
+  </p>
+  <div class="review-buttons">
+    <a
+      href="https://www.facebook.com/leigh.plasterers1"
+      target="_blank"
+      class="btn btn-primary"
+      rel="noopener"
+      title="Review on Facebook"
+    >
+      <i class="fab fa-facebook-f me-2"></i> Review on Facebook
+    </a>
+    <a
+      href="https://g.page/r/CZ4_MkvD-iiIEBM/review"
+      target="_blank"
+      class="btn btn-danger"
+      rel="noopener"
+      title="Review on Google"
+    >
+      <i class="fab fa-google me-2"></i> Review on Google
+    </a>
+  </div>
+</section>
+<!-- /LEAVE REVIEW SECTION -->
+
+<!-- REVIEWS SECTION -->
+<section class="reviews-section">
+  <div class="container">
+    <h5 class="reviews-title">Customer Testimonials</h5>
+    <div class="row gy-4 reviews-container">
+      <!-- FIRST REVIEW -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card text-center review-card h-100">
+          <div class="card-body">
+            <p class="review-text">
+              "Fantastic job repairing water damage in our kitchen! The finish is flawless. Highly recommend."
+            </p>
+            <p class="review-rating">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </p>
+            <p class="review-author"><strong>Lorraine L.</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- SECOND REVIEW -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card text-center review-card h-100">
+          <div class="card-body">
+            <p class="review-text">
+              "Quick and professional. They handled re-skimming our living room perfectly. Fair price too!"
+            </p>
+            <p class="review-rating">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </p>
+            <p class="review-author"><strong>AJ</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- THIRD REVIEW -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card text-center review-card h-100">
+          <div class="card-body">
+            <p class="review-text">
+              "We had cracks in the ceiling. The team arrived on time and finished earlier than expected. Great service!"
+            </p>
+            <p class="review-rating">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </p>
+            <p class="review-author"><strong>Dennis I.</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SHOW MORE REVIEWS BUTTON -->
+    <div class="text-center mt-4">
+      <button class="btn btn-dark btn-lg btn-more-reviews" onclick="toggleReviews()">
+        More Reviews
+      </button>
+    </div>
+
+    <!-- ADDITIONAL REVIEWS -->
+    <div id="moreReviews" class="row g-4 container mx-auto more-reviews-container d-none mt-4">
+      <!-- FOURTH REVIEW -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card text-center review-card h-100">
+          <div class="card-body">
+            <p class="review-text">
+              "Excellent workmanship and attention to detail. Our new office space looks amazing!"
+            </p>
+            <p class="review-rating">
+              &#9733;&#9733;&#9733;&#9733;&#9733;&#189;
+            </p>
+            <p class="review-author"><strong>Sarah M.</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- FIFTH REVIEW -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card text-center review-card h-100">
+          <div class="card-body">
+            <p class="review-text">
+              "Leigh Plasterers transformed our basement. The team was courteous and professional throughout."
+            </p>
+            <p class="review-rating">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </p>
+            <p class="review-author"><strong>Mike T.</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- SIXTH REVIEW -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card text-center review-card h-100">
+          <div class="card-body">
+            <p class="review-text">
+              "Their rendering services exceeded our expectations. Durable and aesthetically pleasing."
+            </p>
+            <p class="review-rating">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </p>
+            <p class="review-author"><strong>Emma R.</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more reviews as needed -->
+    </div>
+  </div>
+</section>
+<!-- /REVIEWS SECTION -->
+
+<!-- ADDITIONAL SERVICES SECTION -->
+<section class="services-section">
+  <h6 class="services-title">
+    Expert Plastering Services in Leigh & Nearby
+  </h6>
+  <p class="services-description">
+    With years of experience, Leigh Plasterers delivers high-quality plastering services across Leigh (113k), Tyldesley (27k), Atherton (29k), Bolton (414k), and beyond.
+    Our expert craftsmanship ensures smooth finishes and lasting results for every project.
+  </p>
+  <a
+    href="services.html"
+    class="btn btn-lg services-cta-button"
+    title="Learn More About Our Services"
+  >
+    Learn More About Our Services <i class="fas fa-arrow-right ms-2"></i>
+  </a>
+</section>
+<!-- /ADDITIONAL SERVICES SECTION -->
+
+<!-- FOOTER -->
+<footer class="mt-5">
+  <div class="container">
+    <p class="py-3 mb-0">
+      &copy; 2025 Leigh Plasterers. All rights reserved. | 
+      <a href="privacy.html" class="text-white">Privacy Policy</a> | 
+      <a href="terms.html" class="text-white">Terms of Service</a>
+    </p>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+<!-- Toggle Reviews Script -->
+<script>
+  function toggleReviews() {
+    const moreReviews = document.getElementById('moreReviews');
+    const moreReviewsButton = document.querySelector('.btn-more-reviews');
+    if (moreReviews.classList.contains('d-none')) {
+      moreReviews.classList.remove('d-none');
+      moreReviewsButton.textContent = 'Show Less';
+    } else {
+      moreReviews.classList.add('d-none');
+      moreReviewsButton.textContent = 'More Reviews';
+      // Scroll back to the button after hiding reviews
+      moreReviewsButton.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
+
+<!-- Bootstrap JS (Bootstrap 5.0.2) -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFY3bybNT2+Qm7gFQnZ7UWf5rKboMnuYF0sg6N9C/Qvn3dz3vj0E2ssqMf"
+  crossorigin="anonymous">
+</script>
+
+</body>
+</html>

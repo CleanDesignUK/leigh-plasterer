@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Locations We Serve | Leigh Plasterers</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="Leigh Plasterers provides professional plastering, skimming, water damage repair, and more throughout Leigh, Atherton, Bolton, Bury, Worsley, and beyond. Call 07915 578568!">
+  <meta name="keywords" content="plasterers near me, local plasterers, water damage repair, plasterers in Atherton, plasterers in Bolton, skimming, re-skimming, cost of re skimming a room, plastering cost">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.leighplasterers.uk/locations.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Locations We Serve | Leigh Plasterers" />
+  <meta property="og:description" content="From Leigh to Bolton, Atherton to Bury—Leigh Plasterers delivers expert plastering, skimming, and water damage repair in Greater Manchester.">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.leighplasterers.uk/locations.html" />
+  <meta property="og:image" content="images/leigh-plasterers-logo.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Leigh Plasterers | Locations We Serve">
+  <meta name="twitter:description" content="Professional plastering, skimming, and water damage repair across Leigh, Atherton, Bolton, Farnworth, Bury, Worsley, and more.">
+  <meta name="twitter:image" content="images/leigh-plasterers-logo.png">
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  >
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #2c3e50;
+    }
+    .navbar {
+      background-color: #0A1A32;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover {
+      color: #e0e0e0 !important;
+    }
+    .call-button {
+      background-color: #1c5e8c;
+      color: #ffffff !important;
+      border-radius: 30px;
+      padding: 8px 20px;
+      box-shadow: 0 4px 10px rgba(28, 94, 140, 0.5);
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    .call-button:hover {
+      background-color: #14527a;
+      box-shadow: 0 6px 16px rgba(20, 82, 122, 0.7);
+    }
+
+    /* Header */
+    .locations-header {
+      background: url("images/locations-banner.jpg") no-repeat center center;
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+      padding: 60px 20px;
+      position: relative;
+    }
+    .locations-header-overlay {
+      background-color: rgba(0,0,0,0.4);
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+    }
+    .locations-header h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+    }
+
+    /* Container */
+    .locations-container {
+      padding: 40px 20px;
+    }
+    .intro-text {
+      margin-bottom: 20px;
+    }
+
+    /* Subnav */
+    .locations-subnav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    .locations-subnav a {
+      color: #0A1A32;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 15px;
+      background-color: #ffffff;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .locations-subnav a:hover {
+      background-color: #e9ecef;
+      color: #1c5e8c;
+    }
+
+    /* Location Item */
+    .location-item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .location-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .location-item h2 {
+      font-size: 1.5rem;
+      color: #0A1A32;
+      margin-bottom: 10px;
+    }
+    .location-item p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .location-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="home.html">Leigh Plasterers</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      style="color: #fff;"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="ms-lg-3">
+        <a class="btn call-button" href="tel:+447915578568">Call: 07915 578568</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HEADER -->
+<div class="locations-header position-relative">
+  <div class="locations-header-overlay"></div>
+  <h1 class="display-4 fw-bold position-relative">
+    Locations We Serve
+  </h1>
+</div>
+<!-- /HEADER -->
+
+<div class="container locations-container">
+  <p class="intro-text">
+    At Leigh Plasterers, we bring top-notch plastering, 
+    <strong>skimming &amp; re-skimming</strong>, and 
+    <strong>water damage repair</strong> solutions to a wide range of 
+    areas across Greater Manchester. Check out our anchor links below to jump 
+    directly to your location.
+  </p>
+
+  <!-- Sub Navigation for Anchor Links -->
+  <div class="locations-subnav">
+    <a href="#astley">Astley</a>
+    <a href="#atherton">Atherton</a>
+    <a href="#bolton">Bolton</a>
+    <a href="#bury">Bury</a>
+    <a href="#farnworth">Farnworth</a>
+    <a href="#hindley">Hindley</a>
+    <a href="#horwich">Horwich</a>
+    <a href="#irlam">Irlam</a>
+    <a href="#leigh">Leigh</a>
+    <a href="#m28">M28</a>
+    <a href="#pendlebury">Pendlebury</a>
+    <a href="#salford">Salford</a>
+    <a href="#swinton">Swinton</a>
+    <a href="#tyldesley">Tyldesley</a>
+    <a href="#walkden">Walkden</a>
+    <a href="#westhoughton">Westhoughton</a>
+    <a href="#worsley">Worsley</a>
+    <!-- Add or remove anchor links as needed -->
+  </div>
+
+  <!-- Astley -->
+  <div class="location-item" id="astley">
+    <img
+      src="images/locations/astley-placeholder.jpg"
+      alt="Placeholder for Astley"
+      class="location-img"
+    >
+    <h2>Astley (Population ~10,000)</h2>
+    <p>
+      From <strong>professional plastering</strong> to seamless 
+      <strong>water damage repair</strong>, we serve Astley’s homes and 
+      businesses with minimal downtime. Whether you need <em>dry lining</em> 
+      or a full <em>ceiling plastering</em>, we’ve got you covered.
+    </p>
+  </div>
+
+  <!-- Atherton -->
+  <div class="location-item" id="atherton">
+    <img
+      src="images/locations/atherton-placeholder.jpg"
+      alt="Placeholder for Atherton"
+      class="location-img"
+    >
+    <h2>Atherton (Population ~29,000)</h2>
+    <p>
+      Searching for <strong>plasterers in Atherton</strong>? Our team handles 
+      <em>skimming &amp; re-skimming</em>, 
+      <em>rendering</em>, and <em>cost of re skimming a room</em> solutions. 
+      Get a free quote for your next renovation project.
+    </p>
+  </div>
+
+  <!-- Bolton -->
+  <div class="location-item" id="bolton">
+    <img
+      src="images/locations/bolton-placeholder.jpg"
+      alt="Placeholder for Bolton"
+      class="location-img"
+    >
+    <h2>Bolton (Population ~414,000)</h2>
+    <p>
+      Our <em>plasterers near Bolton</em> handle everything from 
+      <strong>dry lining</strong> to <strong>water damage repairs</strong>. 
+      Trust us to restore your walls to a flawless finish—every time.
+    </p>
+  </div>
+
+  <!-- Bury -->
+  <div class="location-item" id="bury">
+    <img
+      src="images/locations/bury-placeholder.jpg"
+      alt="Placeholder for Bury"
+      class="location-img"
+    >
+    <h2>Bury (Population ~146,000)</h2>
+    <p>
+      Handling <em>plastering</em> and <em>water damage repair</em> in Bury 
+      for residential or commercial spaces. Experience high-quality 
+      workmanship at affordable <strong>plastering cost</strong>.
+    </p>
+  </div>
+
+  <!-- Farnworth -->
+  <div class="location-item" id="farnworth">
+    <img
+      src="images/locations/farnworth-placeholder.jpg"
+      alt="Placeholder for Farnworth"
+      class="location-img"
+    >
+    <h2>Farnworth (Population ~58,000)</h2>
+    <p>
+      Need <em>skimming services</em> or <em>ceiling plastering design</em> 
+      in Farnworth? We’re local experts offering quick turnaround on 
+      <strong>plaster water damage repair</strong> and more.
+    </p>
+  </div>
+
+  <!-- Hindley -->
+  <div class="location-item" id="hindley">
+    <img
+      src="images/locations/hindley-placeholder.jpg"
+      alt="Placeholder for Hindley"
+      class="location-img"
+    >
+    <h2>Hindley (Population ~18,000)</h2>
+    <p>
+      Hindley residents turn to us for <em>rendering near me</em>, 
+      <em>plasterer near me</em>, and specialized <em>dry lining</em>.
+      Enhance your property with professional plastering solutions.
+    </p>
+  </div>
+
+  <!-- Horwich -->
+  <div class="location-item" id="horwich">
+    <img
+      src="images/locations/horwich-placeholder.jpg"
+      alt="Placeholder for Horwich"
+      class="location-img"
+    >
+    <h2>Horwich (Population ~55,000)</h2>
+    <p>
+      From <em>repair water damage</em> to <em>cost of re skimming a room</em>,
+      our Horwich team ensures you get flawless walls and ceilings—fast.
+    </p>
+  </div>
+
+  <!-- Irlam -->
+  <div class="location-item" id="irlam">
+    <img
+      src="images/locations/irlam-placeholder.jpg"
+      alt="Placeholder for Irlam"
+      class="location-img"
+    >
+    <h2>Irlam (Population ~28,000)</h2>
+    <p>
+      We offer <strong>professional plastering services</strong> in Irlam for
+      both homes and businesses. Ask about our <em>dry lining</em> and 
+      <em>re-skimming</em> deals.
+    </p>
+  </div>
+
+  <!-- Leigh -->
+  <div class="location-item" id="leigh">
+    <img
+      src="images/locations/leigh-placeholder.jpg"
+      alt="Placeholder for Leigh"
+      class="location-img"
+    >
+    <h2>Leigh (Population ~113,000)</h2>
+    <p>
+      Our home base. Leigh customers trust us for everything from 
+      <em>plaster water damage repair</em> to high-end 
+      <em>ceiling plastering design</em>. We deliver top results at 
+      competitive plastering prices.
+    </p>
+  </div>
+
+  <!-- M28 -->
+  <div class="location-item" id="m28">
+    <img
+      src="images/locations/m28-placeholder.jpg"
+      alt="Placeholder for M28"
+      class="location-img"
+    >
+    <h2>M28 (Postal Code ~119,000)</h2>
+    <p>
+      Serving the M28 area with <strong>skimming and re-skimming</strong>, 
+      <strong>dry lining</strong>, and robust <strong>water damage repairs</strong>.
+      Elevate your space with a perfect finish.
+    </p>
+  </div>
+
+  <!-- Pendlebury -->
+  <div class="location-item" id="pendlebury">
+    <img
+      src="images/locations/pendlebury-placeholder.jpg"
+      alt="Placeholder for Pendlebury"
+      class="location-img"
+    >
+    <h2>Pendlebury (Population ~20,000)</h2>
+    <p>
+      Our Pendlebury services include <em>professional plastering repair</em>, 
+      <em>dry lining</em>, and <em>rendering near me</em> for all project sizes.
+    </p>
+  </div>
+
+  <!-- Salford -->
+  <div class="location-item" id="salford">
+    <img
+      src="images/locations/salford-placeholder.jpg"
+      alt="Placeholder for Salford"
+      class="location-img"
+    >
+    <h2>Salford (Population ~368,000)</h2>
+    <p>
+      Whether it's <em>what is dry lining</em> or a full 
+      <em>ceiling plastering</em> job, Salford homeowners rely on our swift,
+      high-quality plastering approach.
+    </p>
+  </div>
+
+  <!-- Swinton -->
+  <div class="location-item" id="swinton">
+    <img
+      src="images/locations/swinton-placeholder.jpg"
+      alt="Placeholder for Swinton"
+      class="location-img"
+    >
+    <h2>Swinton (Population ~46,000)</h2>
+    <p>
+      From <strong>dry lining</strong> to 
+      <strong>skimming services</strong>, Swinton clients enjoy our 
+      reliable plastering solutions and water damage restoration options.
+    </p>
+  </div>
+
+  <!-- Tyldesley -->
+  <div class="location-item" id="tyldesley">
+    <img
+      src="images/locations/tyldesley-placeholder.jpg"
+      alt="Placeholder for Tyldesley"
+      class="location-img"
+    >
+    <h2>Tyldesley (Population ~27,000)</h2>
+    <p>
+      We excel at <em>dry lining</em>, <em>re-skimming walls</em>, and 
+      <em>water damage repair</em> in Tyldesley. Trust our professional team
+      for a flawless, long-lasting finish.
+    </p>
+  </div>
+
+  <!-- Walkden -->
+  <div class="location-item" id="walkden">
+    <img
+      src="images/locations/walkden-placeholder.jpg"
+      alt="Placeholder for Walkden"
+      class="location-img"
+    >
+    <h2>Walkden (Population ~22,000)</h2>
+    <p>
+      Whether you need a <em>plasterer near me</em> for small fixes or 
+      <em>cost of re skimming a room</em> for a bigger project, we’re here
+      to deliver top-tier results in Walkden.
+    </p>
+  </div>
+
+  <!-- Westhoughton -->
+  <div class="location-item" id="westhoughton">
+    <img
+      src="images/locations/westhoughton-placeholder.jpg"
+      alt="Placeholder for Westhoughton"
+      class="location-img"
+    >
+    <h2>Westhoughton (Population ~37,000)</h2>
+    <p>
+      Our Westhoughton plasterers specialize in 
+      <em>professional plastering services</em>, <em>dry lining</em>, and 
+      <em>water damage repair</em>, ensuring durability and a flawless aesthetic.
+    </p>
+  </div>
+
+  <!-- Worsley -->
+  <div class="location-item" id="worsley">
+    <img
+      src="images/locations/worsley-placeholder.jpg"
+      alt="Placeholder for Worsley"
+      class="location-img"
+    >
+    <h2>Worsley (Population ~117,000)</h2>
+    <p>
+      Our <strong>plasterers near Worsley</strong> excel at 
+      <em>rendering</em>, <em>ceiling plastering</em>, and 
+      <em>professional plastering repair</em>, making your walls look brand new.
+    </p>
+  </div>
+</div>
+
+<!-- FOOTER (OPTIONAL) -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  <p class="mb-0">
+    &copy; 2025 Leigh Plasterers. Call 07915 578568 for professional plastering services across Greater Manchester.
+  </p>
+</footer>
+
+<!-- Bootstrap Bundle JS -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFY3bybNT2+Qm7gFQnZ7UWf5rKboMnuYF0sg6N9C/Qvn3dz3vj0E2ssqMf"
+  crossorigin="anonymous">
+</script>
+</body>
+</html>
