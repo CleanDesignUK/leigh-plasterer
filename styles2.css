@@ -1,0 +1,406 @@
+/* ==============================
+   RESET & BASE STYLES
+============================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #2c3e50;
+    line-height: 1.5;
+  }
+  
+  /* Visually hidden class for improved accessibility */
+  .visually-hidden-focusable:not(:focus):not(:focus-within) {
+    clip: rect(0 0 0 0);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+  }
+  
+  /* Anchor focus outline */
+  a:focus,
+  button:focus {
+    outline: 2px dashed #1c5e8c;
+    outline-offset: 2px;
+  }
+  
+  /* Ensures content doesn't hide behind fixed navbar */
+  body {
+    padding-top: 70px; /* matches the approximate navbar height */
+  }
+  
+  /* ==============================
+     NAVBAR STYLES
+  ============================== */
+  .navbar {
+    background-color: #0A1A32;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand,
+  .nav-link,
+  .navbar-toggler {
+    color: #ffffff !important;
+  }
+  
+  .nav-link:hover,
+  .dropdown-item:hover {
+    color: #e0e0e0 !important;
+  }
+  
+  .dropdown-menu {
+    background-color: #0A1A32;
+    border: none;
+  }
+  
+  .dropdown-item {
+    color: #ffffff !important;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #14527a;
+  }
+  
+  .dropdown-toggle::after {
+    border-top: 0.3em solid rgba(255, 255, 255, 0.5);
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+    margin-left: 0.255em;
+  }
+  
+  /* Navbar Call Button */
+  .call-button {
+    background-color: #1c5e8c;
+    color: #ffffff !important;
+    border-radius: 30px;
+    padding: 8px 20px;
+    box-shadow: 0 4px 10px rgba(28, 94, 140, 0.5);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .call-button:hover {
+    background-color: #14527a;
+    box-shadow: 0 6px 16px rgba(20, 82, 122, 0.7);
+  }
+  
+  /* ==============================
+     HERO SECTION
+  ============================== */
+  .hero-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;  /* Ensures it takes up most of the viewport height */
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 20px; /* for some side padding on smaller screens */
+  }
+  
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* ensures the image covers entire background */
+    z-index: 1;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 26, 50, 0.6);
+    z-index: 2;
+  }
+  
+  .hero-content {
+    z-index: 3;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* ==============================
+     SERVICES OVERVIEW
+  ============================== */
+  .services-overview-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+  }
+  
+  .services-overview-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #0A1A32;
+  }
+  
+  .service-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-image {
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .service-title {
+    color: #0A1A32;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  
+  .service-description {
+    color: #2c3e50;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .service-cta-button {
+    background-color: #0A1A32;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .service-cta-button:hover {
+    background-color: #14527a;
+  }
+  
+  /* ==============================
+     CTA SECTION
+  ============================== */
+  .cta-section {
+    padding: 60px 20px;
+    background: linear-gradient(120deg, #0A1A32, #1c5e8c);
+    color: #fff;
+  }
+  
+  .cta-title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #ffffff;
+    color: #0A1A32;
+    border-radius: 30px;
+    padding: 12px 30px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .cta-button:hover {
+    background-color: #f2f2f2;
+    color: #1c5e8c;
+  }
+  
+  /* ==============================
+     LEAVE REVIEW SECTION
+  ============================== */
+  .leave-review-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .leave-review-title {
+    font-size: 2rem;
+    color: #0A1A32;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .leave-review-description {
+    color: #2c3e50;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+  }
+  
+  .review-buttons .btn {
+    margin: 0 10px 10px 0;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  /* ==============================
+     REVIEWS SECTION
+  ============================== */
+  .reviews-section {
+    padding: 60px 20px;
+    background-color: #ecf0f1;
+  }
+  
+  .reviews-title {
+    font-size: 2rem;
+    color: #0A1A32;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+  
+  .review-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .review-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-text {
+    font-style: italic;
+    color: #2c3e50;
+    margin-top: 20px;
+    flex-grow: 1;
+  }
+  
+  .review-rating {
+    color: #f1c40f;
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .review-author {
+    color: #0A1A32;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  
+  .btn-more-reviews {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #0A1A32;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-more-reviews:hover {
+    background-color: #14527a;
+  }
+  
+  .more-reviews-container.d-none {
+    display: none;
+  }
+  
+  /* ==============================
+     ADDITIONAL SERVICES SECTION
+  ============================== */
+  .services-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .services-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .services-title {
+    font-size: 2rem;
+    color: #0A1A32;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .services-description {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .services-cta-button {
+    background-color: #0A1A32;
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 30px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .services-cta-button:hover {
+    background-color: #14527a;
+  }
+  
+  /* ==============================
+     FOOTER
+  ============================== */
+  .site-footer {
+    background-color: #0A1A32;
+    color: #ffffff;
+  }
+  
+  .site-footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* ==============================
+     MEDIA QUERIES
+  ============================== */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+    .services-overview-title,
+    .reviews-title,
+    .leave-review-title {
+      font-size: 2rem;
+    }
+    .cta-title {
+      font-size: 2rem;
+    }
+  }
+  

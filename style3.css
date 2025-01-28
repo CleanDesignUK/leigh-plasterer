@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+  }
+  
+  .z-index-1 {
+    z-index: 1;
+  }
+  
+  .locations-header {
+    background: url("hero.jpg") no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .locations-header-overlay {
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+  }
+  
+  .locations-header h1 {
+    position: relative;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+  }
+  
+  .locations-container {
+    padding: 40px 20px;
+  }
+  
+  .intro-text {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Sub Navigation */
+  .locations-subnav a {
+    margin: 2px;
+  }
+  
+  /* Call Button */
+  .call-button {
+    background-color: #1c5e8c;
+    color: #ffffff !important;
+    border-radius: 30px;
+    padding: 8px 20px;
+    box-shadow: 0 4px 10px rgba(28, 94, 140, 0.5);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .call-button:hover {
+    background-color: #14527a;
+    box-shadow: 0 6px 16px rgba(20, 82, 122, 0.7);
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #0A1A32;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+  }
+  
+  .nav-link:hover, .navbar-brand:hover {
+    color: #e0e0e0 !important;
+  }
+  
+  .dropdown-menu {
+    background-color: #0A1A32;
+  }
+  
+  .dropdown-item {
+    color: #fff !important;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #14527a;
+    color: #fff !important;
+  }
+  
+  /* Location Cards */
+  .location-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  }
+  
+  .location-img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    color: #0A1A32;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #0A1A32;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 767.98px) {
+    .locations-header {
+      height: 200px;
+    }
+  
+    .locations-header h1 {
+      font-size: 2rem;
+    }
+  
+    .location-img {
+      height: 150px;
+    }
+  }
+  

@@ -35,7 +35,8 @@
     content="Get expert water damage repairs for walls, ceilings, and plaster surfaces. Serving Leigh, Atherton, Bolton, Farnworth, and more."
   />
   <meta name="twitter:image" content="images/leigh-plasterers-logo.png" />
-
+  <link rel="icon" href="images/leigh-plasterers-logo.png" type="image/png">
+  
   <!-- Bootstrap 5 CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -78,7 +79,7 @@
 
     /* Header */
     .water-damage-header {
-      background: url("images/water-damage-banner.jpg") no-repeat center center;
+      background: url("hero.jpg") no-repeat center center;
       background-size: cover;
       text-align: center;
       color: #fff;
@@ -129,7 +130,7 @@
     }
     .damage-section img {
       width: 100%;
-      height: 220px;
+      height: auto;
       object-fit: cover;
       border-radius: 6px;
       margin-bottom: 15px;
@@ -148,7 +149,6 @@
 <body>
 
 <!-- NAVBAR -->
--->
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="home.html">Leigh Plasterers</a>
@@ -248,7 +248,6 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="aboutDropdown">
               <li><a class="dropdown-item" href="about.html#our-story">Our Story</a></li>
-            
               <li><a class="dropdown-item" href="about.html#why-choose">Why Choose Us</a></li>
             </ul>
           </li>
@@ -285,7 +284,7 @@
 <!-- HEADER -->
 <header class="water-damage-header position-relative">
   <div class="water-damage-header-overlay"></div>
-  <h1 class="display-4 fw-bold position-relative">
+  <h1 class="display-4 fw-bold position-relative py-5">
     Water Damage Repair
   </h1>
 </header>
@@ -304,70 +303,91 @@
 
   <!-- Our Approach -->
   <section class="damage-section">
-    <img
-      src="images/water-damage-approach.jpg"
-      alt="Placeholder: Our Approach to Water Damage"
-    />
-    <h2>Our Restoration Approach</h2>
-    <p>
-      We understand the urgency of <em>repair water damage</em> to prevent 
-      further structural harm or mold growth. Our step-by-step approach includes:
-    </p>
-    <ul>
-      <li><strong>Assessment:</strong> Identifying the source of leaks or flood damage.</li>
-      <li><strong>Drying &amp; Dehumidifying:</strong> Eliminating moisture to stop mold or rot.</li>
-      <li><strong>Plaster Removal &amp; Replacement:</strong> Cutting out damaged sections and installing fresh plasterboard or applying new plaster.</li>
-      <li><strong>Finishing &amp; Painting:</strong> Achieving a flawless, painted surface.</li>
-    </ul>
-    <p>
-      Our methods align with best practices for <em>water damage &amp; restoration</em>, 
-      ensuring a durable finish for your property.
-    </p>
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="plaster-skimming.jpg"
+          alt="Technician assessing water damage on a ceiling"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-md-6 d-flex flex-column">
+        <h2>Our Restoration Approach</h2>
+        <p>
+          We understand the urgency of <em>repair water damage</em> to prevent 
+          further structural harm or mold growth. Our step-by-step approach includes:
+        </p>
+        <ul>
+          <li><strong>Assessment:</strong> Identifying the source of leaks or flood damage.</li>
+          <li><strong>Drying &amp; Dehumidifying:</strong> Eliminating moisture to stop mold or rot.</li>
+          <li><strong>Plaster Removal &amp; Replacement:</strong> Cutting out damaged sections and installing fresh plasterboard or applying new plaster.</li>
+          <li><strong>Finishing &amp; Painting:</strong> Achieving a flawless, painted surface.</li>
+        </ul>
+        <p>
+          Our methods align with best practices for <em>water damage &amp; restoration</em>, 
+          ensuring a durable finish for your property.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- Why Choose Us -->
   <section class="damage-section">
-    <img
-      src="images/why-choose-us.jpg"
-      alt="Placeholder: Why Choose Leigh Plasterers"
-    />
-    <h2>Why Choose Leigh Plasterers for Water Damage?</h2>
-    <p>
-      <strong>Expertise:</strong> Our plasterers are trained to handle 
-      <em>water restoration damage</em>, whether mild or severe.
-    </p>
-    <p>
-      <strong>Local Knowledge:</strong> We serve 
-      <strong>Leigh, Tyldesley, Atherton, Bolton, Farnworth, Bury, Salford</strong>, 
-      and surrounding areas, arriving quickly to minimize downtime.
-    </p>
-    <p>
-      <strong>Comprehensive Solutions:</strong> From initial drying to 
-      <em>restoration of water damage</em>, we handle everything under one roof, 
-      including re-skimming, dry lining, or rendering.
-    </p>
+    <div class="row">
+      <div class="col-md-6 order-md-2">
+        <img
+          src="skimming-reskimming.jpg"
+          alt="Leigh Plasterers team working on water damage restoration"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-md-6 d-flex flex-column">
+        <h2>Why Choose Leigh Plasterers for Water Damage?</h2>
+        <p>
+          <strong>Expertise:</strong> Our plasterers are trained to handle 
+          <em>water restoration damage</em>, whether mild or severe.
+        </p>
+        <p>
+          <strong>Local Knowledge:</strong> We serve 
+          <strong>Leigh, Tyldesley, Atherton, Bolton, Farnworth, Bury, Salford</strong>, 
+          and surrounding areas, arriving quickly to minimize downtime.
+        </p>
+        <p>
+          <strong>Comprehensive Solutions:</strong> From initial drying to 
+          <em>restoration of water damage</em>, we handle everything under one roof, 
+          including re-skimming, dry lining, or rendering.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- Common Water Damage Sources -->
   <section class="damage-section">
-    <img
-      src="images/common-sources.jpg"
-      alt="Placeholder: Common Water Damage Sources"
-    />
-    <h2>Common Causes of Water Damage</h2>
-    <p>
-      Water damage can strike unexpectedly, often stemming from:
-    </p>
-    <ul>
-      <li><strong>Roof Leaks:</strong> Damaged shingles or flashing lead to ceiling drips.</li>
-      <li><strong>Plumbing Failures:</strong> Burst pipes, faulty connections, or corroded fixtures.</li>
-      <li><strong>Flooding &amp; Storms:</strong> Extreme weather causing interior water buildup.</li>
-      <li><strong>Appliance Leaks:</strong> Washing machines, dishwashers, or water heaters gone awry.</li>
-    </ul>
-    <p>
-      Regardless of the source, we quickly address all <em>water damage repairs</em> 
-      to prevent mold and long-term structural issues.
-    </p>
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="water-damage-repair.jpg"
+          alt="Illustration of common water damage sources like leaks and floods"
+          loading="lazy"
+        />
+      </div>
+      <div class="col-md-6 d-flex flex-column">
+        <h2>Common Causes of Water Damage</h2>
+        <p>
+          Water damage can strike unexpectedly, often stemming from:
+        </p>
+        <ul>
+          <li><strong>Roof Leaks:</strong> Damaged shingles or flashing lead to ceiling drips.</li>
+          <li><strong>Plumbing Failures:</strong> Burst pipes, faulty connections, or corroded fixtures.</li>
+          <li><strong>Flooding &amp; Storms:</strong> Extreme weather causing interior water buildup.</li>
+          <li><strong>Appliance Leaks:</strong> Washing machines, dishwashers, or water heaters gone awry.</li>
+        </ul>
+        <p>
+          Regardless of the source, we quickly address all <em>water damage repairs</em> 
+          to prevent mold and long-term structural issues.
+        </p>
+      </div>
+    </div>
   </section>
 </div>
 <!-- /MAIN CONTENT -->
@@ -388,7 +408,14 @@
 
 <!-- FOOTER (OPTIONAL) -->
 <footer class="bg-dark text-white text-center py-3 mt-5">
-  <p class="mb-0">&copy; 2025 Leigh Plasterers. Restoring water-damaged walls &amp; ceilings across Greater Manchester.</p>
+  <p class="mb-0">
+    &copy; 2025 Leigh Plasterers. Call 07915 578568 for professional plastering services across Greater Manchester.
+  </p>
+  <div class="mt-2">
+    <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
+    <a href="cookie-policy.html" class="text-white me-3">Cookie Policy</a>
+    <a href="gdpr-statement.html" class="text-white">GDPR Statement</a>
+  </div>
 </footer>
 
 <!-- Bootstrap JS -->
