@@ -93,7 +93,7 @@
   
   /* Fix top spacing for main content to avoid navbar overlap */
   body {
-    padding-top: 70px; /* matches the fixed navbar height */
+    padding-top: 60px; /* matches the fixed navbar height */
   }
   
   /* ===============================
