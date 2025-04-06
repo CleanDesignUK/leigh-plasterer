@@ -1,0 +1,203 @@
+/* ========== Base (from your universal scheme) ========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove horizontal scroll on any overflow */
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f4f4;
+  color: #2c3e50;
+  line-height: 1.5;
+  padding-top: 70px;
+  max-width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Headings & Links (universal) */
+h1, h2, h3, h4, h5, h6 {
+  color: #0A1A32;
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
+  color: #0A1A32;
+}
+a:hover {
+  color: #1c5e8c;
+}
+
+/* ========== Navbar (universal) ========== */
+.navbar.bg-primary {
+  background-color: #0A1A32 !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar-brand,
+.navbar-nav .nav-link,
+.navbar-toggler {
+  color: #ffffff !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .dropdown-toggle:hover {
+  color: #dfe6e9 !important;
+}
+.dropdown-menu {
+  background-color: #0A1A32;
+  border: none;
+}
+.dropdown-item {
+  color: #ffffff !important;
+}
+.dropdown-item:hover {
+  background-color: #1c5e8c;
+  color: #fff !important;
+}
+.dropdown-toggle::after {
+  border-top: 0.3em solid rgba(255,255,255,0.5);
+}
+.call-button {
+  background-color: #1c5e8c;
+  color: #ffffff !important;
+  box-shadow: 0 4px 10px rgba(28,94,140,0.5);
+  white-space: nowrap;
+}
+.call-button:hover {
+  background-color: #14527a;
+  box-shadow: 0 6px 16px rgba(20,82,122,0.7);
+}
+
+/* ========== Hero Section ========== */
+.gallery-hero {
+  padding: 10px 0; /* Reduced top padding */
+  background-color: #f4f4f4;
+}
+.gallery-hero .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.gallery-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.gallery-hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+  color: #2c3e50;
+}
+.video-thumb {
+  max-width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* ========== Gallery Grid ========== */
+.gallery-grid {
+  padding: 50px 0;
+  background-color: #fff; /* White area for gallery */
+}
+.gallery-grid .card {
+  background: #fff;
+  border: none;
+  position: relative;
+  border-radius: 0;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.gallery-grid .card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+.gallery-grid .card:hover img {
+  transform: scale(1.1);
+}
+.gallery-grid .card-title-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* ========== Final CTA Section (centered box) ========== */
+.final-cta {
+  background-color: #005dea; /* Background color */
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+.final-cta-container {
+  background-color: #005dea;
+  max-width: 900px;
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
+  border-radius: 8px;
+  flex-wrap: wrap; /* Wrap on small screens to avoid overflow */
+}
+.cta-left {
+  max-width: 600px;
+}
+.cta-left small {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+.cta-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+}
+.cta-desc {
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: #fff;
+}
+.cta-btn {
+  background-color: #0a1a32; 
+  color: #ffffff;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 30px;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+}
+.cta-btn:hover {
+  background-color: #0a1a32;
+  color: #fff;
+}
+
+/* ========== Footer (universal) ========== */
+.site-footer {
+  background-color: #0A1A32;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+.site-footer a {
+  color: #ffffff;
+  margin: 0 10px;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
