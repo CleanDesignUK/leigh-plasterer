@@ -1,0 +1,16 @@
+# robots.txt – Leigh Plasterers  (last updated 2025-07-28)
+
+User-agent: *
+Allow: /
+
+# (Optional) keep typical admin / staging folders private if they exist
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /test/
+
+# Bing still respects crawl delays; Google ignores this line
+Crawl-delay: 10
+
+# XML sitemap location
+Sitemap: https://www.leighplasterers.uk/sitemap.xml

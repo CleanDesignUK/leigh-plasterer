@@ -4,20 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO Meta Tags -->
-  <title>Gallery – Masterful Plastering Projects in Greater Manchester by Leigh Plasterers</title>
-  <meta 
-    name="description" 
-    content="Explore our gallery of masterful plastering projects by Leigh Plasterers. Our work showcases exceptional skimming, rendering, ceiling repairs, and more – delivered with precision across Greater Manchester. Discover our expertise and get inspired for your next project."  
-  />
-  <meta 
-    name="keywords" 
-    content="Local plasterers near me, Professional plastering services, Skimming and rendering specialists, Ceiling repairs, Leigh Plasterers"
-  />
-  <link rel="canonical" href="https://www.leighplasterers.uk/gallery.html" />
+<title>Plastering Project Gallery | Leigh Plasterers, Greater Manchester</title>
 
+<meta name="description"
+      content="Browse real-world plastering, skimming, rendering and ceiling-repair projects completed by Leigh Plasterers across Leigh, Bolton and Greater Manchester. See the quality before you book." />
 
-  <meta property="og:url" content="https://www.leighplasterers.uk/gallery.html">
+<meta name="keywords"
+      content="plastering gallery, skimming projects, rendering work, ceiling repairs, Leigh Plasterers, Greater Manchester" />
+
+<link rel="canonical" href="https://www.leighplasterers.uk/gallery.html" />
+
+<!-- Open Graph -->
+<meta property="og:title"       content="Plastering Project Gallery | Leigh Plasterers"/>
+<meta property="og:description" content="Explore our recent skimming, rendering and ceiling-repair work across Greater Manchester."/>
+<meta property="og:type"        content="website"/>
+<meta property="og:url"         content="https://www.leighplasterers.uk/gallery.html"/>
+<meta property="og:image"       content="https://www.leighplasterers.uk/images/leigh-plasterers-logo.png"/>
+
+<!-- Twitter -->
+<meta name="twitter:card"        content="summary_large_image"/>
+<meta name="twitter:title"       content="Plastering Project Gallery | Leigh Plasterers"/>
+<meta name="twitter:description" content="See the flawless finishes our team delivers on plastering and rendering jobs in Greater Manchester."/>
+<meta name="twitter:image"       content="https://www.leighplasterers.uk/images/leigh-plasterers-logo.png"/>
 
   <!-- Google Fonts (Montserrat) -->
   <link 
@@ -45,9 +53,42 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="gallery.css" />
+  <link rel="stylesheet" href="cookie.css" />
+
   <link rel="icon" href="images/leigh-plasterers-logo.png" type="image/png">
+
+  <!-- ImageGallery schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "Leigh Plasterers Project Gallery",
+  "url": "https://www.leighplasterers.uk/gallery.html",
+  "description": "A portfolio of plastering, skimming, rendering and ceiling-repair projects carried out by Leigh Plasterers.",
+  "isPartOf": { "@id": "https://www.leighplasterers.uk/#website" },
+  "publisher": {
+    "@type": "LocalBusiness",
+    "@id": "https://www.leighplasterers.uk/#business"
+  }
+}
+</script>
 </head>
 <body>
+  <!-- COOKIE BANNER -->
+<div id="cookie-banner" role="dialog" aria-live="polite" class="cookie-banner">
+  <div class="cookie-content">
+    <p>
+      🍪 We use cookies to improve your browsing experience, deliver personalised content, and analyse our traffic. 
+      By clicking “Accept All”, you consent to our use of cookies. See our 
+      <a href="cookie-policy.html">Cookie Policy</a> for details.
+    </p>
+    <div class="cookie-buttons">
+      <button id="cookie-accept" class="btn-accept">Accept All 🍪</button>
+      <button id="cookie-decline" class="btn-decline">Decline</button>
+    </div>
+  </div>
+</div>
+
   <!-- NAVBAR (using universal color scheme) -->
   <nav class="navbar navbar-expand-lg fixed-top bg-primary" aria-label="Main Navigation">
     <div class="container">
@@ -274,5 +315,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"
   ></script>
+  <script src="cookie.js"></script>
+
 </body>
 </html>
